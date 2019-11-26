@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/31b4f03162.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/index.css"/>
         <title>Lombok</title>
     </head>
@@ -44,21 +48,21 @@
                     <hr class="mb-5">
                     <div class="card-deck pb-5 mb-5">
                         <div class="card shadow" data-toggle="modal" data-target="#modalProductInfo">
-                            <img src="img/agave.jpg" class="card-img-top" alt="..."/>
+                            <img src="img/agave.jpg" class="card-img-top" alt="Agave with dark background"/>
                             <div class="card-body text-center">
                                 <hr class="card-title">
                                 <p class="card-text">How to use mindfulness in your everyday life</p>
                             </div>
                         </div>
                         <div class="card shadow" data-toggle="modal" data-target="#modalProductInfo">
-                            <img src="img/person-in-the-forest.jpg" class="card-img-top" alt="..."/>
+                            <img src="img/person-in-the-forest.jpg" class="card-img-top" alt="Person in the forest"/>
                             <div class="card-body text-center">
                                 <hr class="card-title">
                                 <p class="card-text">What are the best walking meditations</p>
                             </div>
                         </div>
                         <div class="card shadow" data-toggle="modal" data-target="#modalProductInfo">
-                            <img src="img/leafs.jpg" class="card-img-top" alt="..."/>
+                            <img src="img/leafs.jpg" class="card-img-top" alt="Leafs with dark background"/>
                             <div class="card-body text-center">
                                 <hr class="card-title">
                                 <p class="card-text">How to go deep into the mind of hope</p>
@@ -67,60 +71,71 @@
                     </div>
                 </section>
                 <section id="about">
-                    <div class="card mb-3">
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-md-4">
-                                <img src="img/orangery.jpg" class="card-img" alt="..."/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body text-center">
-                                    <h2 class="card-title">ABOUT</h2>
-                                    <hr>
-                                    <p class="card-text">Since 1993 we have roomed is a blog from the earliest years.Lorem
-                                      ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                      aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                      reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    </p>
-                                </div>
+                    <div class="row no-gutters align-items-center">
+                        <div class="col-md-4">
+                            <img src="img/orangery.jpg" class="card-img" alt="Orangery"/>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body text-center">
+                                <h2 class="card-title">ABOUT</h2>
+                                <hr>
+                                <p class="card-text">
+                                    Since 1993 we have roomed is a blog from the earliest years.Lorem
+                                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                </p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section id="subscribe" class="d-flex flex-column align-items-center pb-5">
+                <section id="subscribe" class="d-flex flex-column pb-5">
                     <h2 class="text-center pt-5">SUBSCRIBE</h2>
                     <p class="lead text-center">Sign-up to our newsletter</p>
                     <form class="d-flex flex-column align-items-center">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputEmail1" placeholder="Your email"/>
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark">Submit</button>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Your email"/>
+                        <button type="submit" class="btn btn-outline-dark mt-3">Submit</button>
                     </form>
                 </section>
                 <footer class="mt-3 py-5">
-                    <div class="row ">
-                        <div class="col-12 col-sm-6 text-center pt-3">
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                            </a>
-                            <a class="tw-ic">
-                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                            </a>
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                            </a>
-                            <a class="pin-ic">
-                                <i class="fab fa-pinterest fa-lg white-text fa-2x"></i>
-                            </a>
+                        <div class="row ">
+                            <ul class="col-md-6	 list-group list-group-horizontal justify-content-center px-0">
+                                <li class="list-group-item">
+                                    <a href="https://www.facebook.com/">
+                                        <i class="fab fa-facebook fa-lg fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://twitter.com">
+                                        <i class="fab fa-twitter fa-lg  fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://www.instagram.com">
+                                        <i class="fab fa-instagram fa-lg fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="https://www.pinterest.com">
+                                        <i class="fab fa-pinterest fa-lg fa-2x"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="col-md-6	 list-group list-group-horizontal-md text-center px-0">
+                                <li class="list-group-item">
+                                    <a class="text-muted" href="#about">ABOUT</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-muted" href="#articles">ARTICLES</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-muted" href="#subscribe">SUBSCRIBE</a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="col-12 col-sm-6 text-center pt-3">
-                            <a class="text-muted" href="#about">ABOUT</a>
-                            <a class="text-muted" href="#articles">ARTICLES</a>
-                            <a class="text-muted" href="#subscribe">SUBSCRIBE</a>
-                        </div>
-                    </div>
-                </footer>
+                    </footer>
             </main>
         </div>
         <div class="modal fade" id="modalProductInfo" tabindex="-1" role="dialog" aria-labelledby="modalProductInfoLabel" aria-hidden="true">
@@ -139,9 +154,5 @@
                 </div>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/31b4f03162.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

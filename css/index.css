@@ -7,6 +7,7 @@ body {
   --main-hr-color: #78938e;
   --hr-color: #464b47;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body > .container {
@@ -14,14 +15,14 @@ body > .container {
 }
 
 header {
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   color: var(--main-text-color);
 }
 
 header .navbar-nav .nav-item {
   border: 1px solid transparent;
   border-radius: 5px;
-  transition: all ease 0.3s;
+  transition: all 0.3s;
 }
 
 header .navbar-nav .nav-item:hover {
@@ -32,13 +33,20 @@ header .display-4 {
   font-weight: 600;
 }
 
+@media (max-width: 300px) {
+  header .display-4 {
+    font-size: 2.8rem;
+  }
+  h1,
+  h2,
+  p {
+    word-wrap: break-word;
+  }
+}
+
 header .lead {
   text-transform: uppercase;
   font-weight: 400;
-}
-
-hr {
-  border: none;
 }
 
 header hr {
@@ -49,12 +57,11 @@ header hr {
 
 .jumbotron {
   background-color: transparent;
-  background-image: url(../img/background.jpg);
+  background-image: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/*---- section-articles ----*/
 #articles {
   background-color: #f4f6f3;
 }
@@ -73,23 +80,56 @@ header hr {
   height: 3px;
 }
 
-hr.card-title {
+#articles hr.card-title {
   height: 2px;
 }
 
 #articles .card {
   cursor: pointer;
 }
-/*---- section-articles ----*/
 
-/*---- section-about ----*/
 #about hr {
   background-color: var(--hr-color);
   width: 45px;
   height: 4px;
 }
-/*---- section-about ----*/
 
 #subscribe {
-  background-color: #E1E6E0;
+  background-color:#E1E6E0 ;
+}
+
+#subscribe .form-control {
+  text-align: center;
+  max-width: 500px;
+}
+
+footer i {
+  color: var(--main-hr-color);
+  transition: color 0.4s;
+}
+
+footer i.fa-facebook:hover {
+  color: #4267B2;
+}
+
+footer i.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+footer i.fa-instagram:hover {
+  color: #c13584;
+}
+
+footer i.fa-pinterest:hover {
+  color: #bd081c;
+}
+
+footer .list-group {
+  flex-wrap: wrap;
+}
+
+footer .list-group-item {
+  border: none;
+  background-color: transparent;
+  padding: 1rem;
 }
